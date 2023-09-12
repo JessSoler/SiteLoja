@@ -1,0 +1,92 @@
+﻿@model SiteLoja.Models.Produto
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalhe da roupa</h2>
+
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDCategoia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDCategoia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Preco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Preco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecoAtual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecoAtual)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagemUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImagemUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagemThumbnaiUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImagemThumbnaiUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoupaDaSemana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoupaDaSemana)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmEstoque)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmEstoque)
+        </dd>
+
+
+
+    </dl>
+</div>
+<br />
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Volta", "List", null, new { @class = "btn btn-outline-primary" })
+</p>
