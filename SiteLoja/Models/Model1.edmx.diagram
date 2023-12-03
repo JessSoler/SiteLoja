@@ -11,6 +11,7 @@
         <EntityTypeShape EntityType="LojaRoupasModel.sysdiagram" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
         <AssociationConnector Association="LojaRoupasModel.FK_CarrinhoCompraItens_Produtos" ManuallyRouted="false" />
         <AssociationConnector Association="LojaRoupasModel.FK_Produtos_Categorias" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="LojaRoupasModel.Usuario" Width="1.5" PointX="7.375" PointY="2" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

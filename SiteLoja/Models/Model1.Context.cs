@@ -29,5 +29,6 @@ namespace SiteLoja.Models
         public virtual DbSet<Categoria> Categorias { get; set; }
         public virtual DbSet<Produto> Produtos { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
     }
 }
